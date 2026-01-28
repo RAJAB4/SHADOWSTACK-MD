@@ -91,7 +91,7 @@ const alive = async (m, Matrix) => {
     }
   ];
 
-  // Fixed verification contact with proper structure
+  // Updated verification contact with new branding
   const fakeVCard = {
     key: {
       fromMe: false,
@@ -100,16 +100,16 @@ const alive = async (m, Matrix) => {
     },
     message: {
       contactMessage: {
-        displayName: "ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴀɪ ✅",
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Caseyrhodes VERIFIED ✅\nORG:CASEYRHODES-TECH BOT;\nTEL;type=CELL;type=VOICE;waid=13135550002:+13135550002\nEND:VCARD`
+        displayName: "sʜᴀᴅᴏᴡsᴛᴀᴄᴋ-ᴍᴅ ᴠᴇʀɪғɪᴇᴅ ✅",
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:SHADOWSTACK-MD VERIFIED ✅\nORG:SHADOWSTACK-MD TECH;\nTEL;type=CELL;type=VOICE;waid=254112192119:+254112192119\nEND:VCARD`
       }
     }
   };
 
   const buttonMessage = {
-    image: fs.readFileSync('./media/Casey.jpg'),
+    image: fs.readFileSync('./media/Casey.jpg'),  // ← keep path; update file name/content if you want new image
     caption: str,
-    footer: 'Choose an option',
+    footer: '© Powered by GuruTech',
     buttons: buttons,
     headerType: 4,
     contextInfo: {
@@ -120,7 +120,7 @@ const alive = async (m, Matrix) => {
   };
 
   await Matrix.sendMessage(m.from, buttonMessage, {
-    quoted: fakeVCard // Use the fixed verification contact
+    quoted: fakeVCard
   });
 };
 
