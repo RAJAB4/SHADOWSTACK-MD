@@ -1,20 +1,24 @@
 {
-  "name": "Caseyrhodes-AI",
+  "name": "SHADOWSTACK-MD",
   "version": "10.8.1",
-  "description": "Caseyrhodes-AI latest multi device whatsapp bot",
+  "description": "SHADOWSTACK-MD latest multi device whatsapp bot",
   "main": "index.js",
   "engines": {
-  "node": ">=20.x",
-  "npm": ">=10.x"
+    "node": ">=20.x",
+    "npm": ">=10.x"
   },
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name CASEYRHODES-AI",
-    "stop": "pm2 stop ",
-    "restart": "pm2 restart CASEYRHODES-AI"
+    "start": "pm2 start index.js --deep-monitoring --attach --name SHADOWSTACK-MD",
+    "stop": "pm2 stop SHADOWSTACK-MD",
+    "restart": "pm2 restart SHADOWSTACK-MD"
   },
-  "keywords": ["CASEYRHODES-AI", "whatsapp-bot", "whatsapp md bot"],
-  "author": "Caseyrhodes",
+  "keywords": [
+    "SHADOWSTACK-MD",
+    "whatsapp-bot",
+    "whatsapp md bot"
+  ],
+  "author": "GuruTech",
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "npm:@rexxhayanasi/elaina-bail",
